@@ -1,0 +1,38 @@
+
+
+
+                Backend for E-cart
+        -------------------------------------
+
+1. Create a folder for Backend 
+2. Create a package.json file - npm init
+3. Insatall 3rd party package - npm i express cors mongoose dotenv
+4. Create files index.js , .env , .gitignore
+
+5. Inside index.js,
+    -> To automatically load .env file into our appilcation
+    -> Import express, cros, dotenv, 
+    -> Create a servr appilcation
+    -> Use cors(), express.json() in server appilcation
+    -> Define port number
+    -> Run the server appilcation
+
+6. MONGODB ATLAS CONFIGURATION
+    -> Create a databade and collection in ATLAS
+    -> Copy the connection string in to .env file
+    -> Create a folder DB , Inside in it create a connection.js
+    -> In connection.js,
+        - Import mongoose
+        - get db connection string from .env file
+        - use mongoose.connect for connecting MONGODB & MONGODB ATLAS and NODEJS
+    -> Import connection.js in index.js
+
+7. Create a model & Schema to store product details and export the model    
+    -> productSchema.js
+
+8. Create a router to  route
+    -> here we create a  path for api routes
+
+9. Test path using postman/thunder
+
+10. Integrate with frontend
